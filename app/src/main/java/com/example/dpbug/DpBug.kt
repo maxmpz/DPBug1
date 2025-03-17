@@ -57,10 +57,6 @@ fun createAndDestroyDP(context: Context, numBands: Int): Boolean {
 
         Log.w(TAG, "createAndDestroyDP lastBand2.gain=${lastBand2.gain} preLastBand2.gain=${preLastBand2.gain}")
 
-        val actualConfig = dp.config
-
-        Log.w(TAG, "createAndDestroyDP actualConfig=$actualConfig")
-
         dp.release()
 
         return true
